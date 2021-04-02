@@ -1,0 +1,36 @@
+package com.aleDev.dto;
+
+import com.aleDev.Domain.Livro;
+
+public class LivroDto {
+
+	private Integer id;
+	private String titulo;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public LivroDto() {
+		super();
+		
+	}
+
+	public LivroDto(Livro obj) {
+		super();
+		this.id = obj.getId();
+		this.titulo = obj.getTitulo();
+	}
+}
